@@ -1,3 +1,80 @@
 <!DOCTYPE html>
-<meta http-equiv="refresh" content="0; URL='/2021'" />
-<p>Redirecting you to BuildingBloCS 2021</p>
+<html lang="en">
+<head>
+	<meta http-equiv="refresh" content="0; URL='/2021/'" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Redirecting...</title>
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+		}
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			font-family: sans-serif;
+			color: rgb(127, 127, 127)
+		}
+		@media (prefers-color-scheme: dark) {
+			body {
+				background: black;
+			}
+		}
+		.center {
+			text-align: center;
+		}
+		.center > * {
+			margin: 0 auto;
+		}
+		.spinner {
+			font-size: 2em;
+
+			width: 1em;
+			height: 1em;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.spinner span {
+			display: block;
+
+			border-radius: 50%;
+			width: 0.2em;
+			height: 0.2em;
+
+			box-shadow: 0.3em 0.3em rgb(127, 127, 127),
+				-0.3em 0.3em rgb(127, 127, 127),
+				0.3em -0.3em rgb(127, 127, 127),
+				-0.3em -0.3em rgb(127, 127, 127),
+				-0.4243em 0 rgb(127, 127, 127),
+				0 0.4243em rgb(127, 127, 127),
+				0 -0.4243em rgb(127, 127, 127),
+				0.4243em 0 rgb(127, 127, 127);
+
+			animation: 2s linear infinite spin;
+		}
+		@keyframes spin {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+
+</head>
+<body>
+	<div class="center">
+		<div class="spinner">
+			<span></span>
+		</div>
+		<div><p>Redirecting you to BuildingBloCS 2021</p></div>
+	</div>
+</body>
+</html>
